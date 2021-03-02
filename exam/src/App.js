@@ -78,30 +78,30 @@ function App() {
               className={c.inMaintenance === true ? 'in-maintenance' : ''}
               onClick={(e) => handleEditRecordClick(e, i)}>
               <Row>
-                <Col xs={2}>
+                <Col xs={5} sm={4} md={3}>
                   <Image className={"car-image"} src={c.image}/>
                 </Col>
-                <Col xs={10} >
+                <Col xs={7} sm={8} md={9}>
                   <Row>
-                    <Col xs={1}>
+                    <Col xs={4} md={3} lg={2}>
                       Id: {c.id}
                     </Col>
-                    <Col xs={3}>
+                    <Col xs={8} md={4} lg={3}>
                       {c.description}
                     </Col>
-                    <Col xs={3}>
+                    <Col xs={8} md={4} lg={3}>
                       {c.make} / {c.model}
                     </Col>
-                    <Col xs={2}>
+                    <Col xs={4} md={2} lg={2}>
                       {c.km ? c.km + ' km' : '' }
                     </Col>
-                    <Col xs={2}>
+                    <Col xs={6} md={3} lg={2}>
                       {c.estimatedate}
                     </Col>
                   </Row>
                   { c.inMaintenance &&
                     <Row>
-                      <Col xs={4}>
+                      <Col>
                         <Button onClick={(e) => handleNotMaintenanceClick(e, i)}>Remove from maintenance</Button>
                       </Col>
                     </Row>

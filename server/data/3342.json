@@ -6,5 +6,6 @@
       "estimatedate":"2020/20/02",
       "id":3342,
       "image":"images/civic.jpg",
+	  "km":9000,
       "inMaintenance":true
     }

@@ -5,6 +5,7 @@
       "model":"Sentra",
       "estimatedate":"",
       "id":3344,
+	  "km":6000,
       "image":"images/sentra.jpg",
       "inMaintenance":false
     }

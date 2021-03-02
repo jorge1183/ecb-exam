@@ -5,6 +5,7 @@
       "model":"Vento",
       "estimatedate":"2020/06/05",
       "id":3345,
+	  "km":80050,
       "image":"images/vento.jpg",
       "inMaintenance":false
     }

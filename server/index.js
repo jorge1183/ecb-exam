@@ -27,8 +27,7 @@ if (!isDev && cluster.isMaster) {
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../exam/build')));
 
-  app.use(express.json()) // for parsing application/json
-  //app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+  app.use(express.json())
 
   // Answer API requests.
   app.get('/api/cars', function (req, res) {
@@ -38,7 +37,7 @@ if (!isDev && cluster.isMaster) {
       json += (json.length == 0 ? '[' : ',' ) + data;
     });
     json += ']';
-    console.log(json);
+
     res.set('Content-Type', 'application/json');
     res.send(json);
   });
@@ -52,6 +51,7 @@ if (!isDev && cluster.isMaster) {
       "estimatedate":"${req.body.estimatedate || ''}",
       "id":${req.body.id || ''},
       "image":"${req.body.image || ''}",
+      "km":"${req.body.km || ''}",
       "inMaintenance":${req.body.inMaintenance || false}
     }`;
     //Save file to storage
