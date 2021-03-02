@@ -8,7 +8,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "build": "cd exam/ && npm install && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "exam/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorge1183/ecb-exam.git"
   },
   "author": "jorge morales",
   "license": "ISC"
