@@ -68,7 +68,7 @@ function App() {
 
   return (
     <div>
-      <h5>Click on a record to edit</h5>
+      <h5>Click on a record to edit and send to maintenance</h5>
       <ListGroup>
         {
           carList.map((c, i) => 

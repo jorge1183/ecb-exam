@@ -5,6 +5,6 @@
       "model":"Tiguan",
       "estimatedate":"2022/01/06",
       "id":3343,
-      "image":"http://3.23.108.188/cars/tiguan.jpg",
-      "inMaintenance":false
+      "image":"images/tiguan.jpg",
+      "inMaintenance":true
     }
