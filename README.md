@@ -1,6 +1,6 @@
 # ecb-exam
 
-This application displays a list of cars retrieved from json files stored in the "examen/data" folder.
+This application displays a list of cars retrieved from json files stored in the "exam/data" folder.
 Click on any of the records and a modal window will be presented so you can specify a person that will give maintenance to the car and an estimated date, after click "Save changes" the car will be marked as "In maintenance", the background color will change and a button will be displayed so you can unmark the car.
 Changes made will be stored in the same server json files
 
