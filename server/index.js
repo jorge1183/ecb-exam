@@ -49,7 +49,7 @@ if (!isDev && cluster.isMaster) {
       "make":"${req.body.make || ''}",
       "model":"${req.body.model || ''}",
       "estimatedate":"${req.body.estimatedate || ''}",
-      "id":${req.body.id || ''},
+      "id":${req.query.id || ''},
       "image":"${req.body.image || ''}",
       "km":"${req.body.km || ''}",
       "inMaintenance":${req.body.inMaintenance || false}
